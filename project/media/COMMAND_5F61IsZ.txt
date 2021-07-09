@@ -1,0 +1,180 @@
+Microsoft Windows [Version 10.0.18363.657]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+
+C:\Users\Rownok Zahan Rupa>cd desktop
+
+C:\Users\Rownok Zahan Rupa\Desktop>cd Rownok
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>git init
+Reinitialized existing Git repository in C:/Users/Rownok Zahan Rupa/Desktop/Rownok/.git/
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>git add README.md
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>git commit -m "first commit"
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>git branch -M main
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>git remote add origin https://github.com/Muhammad-Taufiq-Khan/SWE_Workspace.git
+error: remote origin already exists.
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>git add .
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>git status
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>ls -l
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>git commit -m "Second commit"
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>git push -u origin main
+To https://github.com/Muhammad-Taufiq-Khan/SWE_Workspace.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Muhammad-Taufiq-Khan/SWE_Workspace.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>git pull https://github.com/Muhammad-Taufiq-Khan/SWE_Workspace.git
+remote: Enumerating objects: 20, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 20 (delta 7), reused 10 (delta 2), pack-reused 0
+Unpacking objects: 100% (20/20), 3.24 KiB | 2.00 KiB/s, done.
+From https://github.com/Muhammad-Taufiq-Khan/SWE_Workspace
+ * branch            HEAD       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>git pull origin master
+fatal: couldn't find remote ref master
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>git pull origin main
+From https://github.com/Muhammad-Taufiq-Khan/SWE_Workspace
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+fatal: refusing to merge unrelated histories
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>git pull origin master --allow-unrelated-histories
+fatal: couldn't find remote ref master
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>git pull origin main --allow-unrelated-histories
+From https://github.com/Muhammad-Taufiq-Khan/SWE_Workspace
+ * branch            main       -> FETCH_HEAD
+CONFLICT (add/add): Merge conflict in README.md
+Auto-merging README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>git status
+On branch main
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   README.txt
+        new file:   README.txt~
+        new file:   Taufiq/readme.md
+        new file:   UpdateGuide.txt
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both added:      README.md
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    sentiment/.idea/.gitignore
+        deleted:    sentiment/.idea/inspectionProfiles/profiles_settings.xml
+        deleted:    sentiment/.idea/misc.xml
+        deleted:    sentiment/.idea/modules.xml
+        deleted:    sentiment/.idea/sentiment.iml
+        deleted:    sentiment/db.sqlite3
+        deleted:    sentiment/manage.py
+        deleted:    sentiment/sentiment/__init__.py
+        deleted:    sentiment/sentiment/__pycache__/__init__.cpython-39.pyc
+        deleted:    sentiment/sentiment/__pycache__/settings.cpython-39.pyc
+        deleted:    sentiment/sentiment/__pycache__/urls.cpython-39.pyc
+        deleted:    sentiment/sentiment/__pycache__/wsgi.cpython-39.pyc
+        deleted:    sentiment/sentiment/asgi.py
+        deleted:    sentiment/sentiment/settings.py
+        deleted:    sentiment/sentiment/urls.py
+        deleted:    sentiment/sentiment/wsgi.py
+        deleted:    sentiment/sentimentApp/__init__.py
+        deleted:    sentiment/sentimentApp/__pycache__/__init__.cpython-39.pyc
+        deleted:    sentiment/sentimentApp/__pycache__/admin.cpython-39.pyc
+        deleted:    sentiment/sentimentApp/__pycache__/apps.cpython-39.pyc
+        deleted:    sentiment/sentimentApp/__pycache__/models.cpython-39.pyc
+        deleted:    sentiment/sentimentApp/__pycache__/urls.cpython-39.pyc
+        deleted:    sentiment/sentimentApp/admin.py
+        deleted:    sentiment/sentimentApp/apps.py
+        deleted:    sentiment/sentimentApp/migrations/0001_initial.py
+        deleted:    sentiment/sentimentApp/migrations/0002_auto_20210703_2323.py
+        deleted:    sentiment/sentimentApp/migrations/0003_auto_20210703_2327.py
+        deleted:    sentiment/sentimentApp/migrations/0004_alter_client_email.py
+        deleted:    sentiment/sentimentApp/migrations/__init__.py
+        deleted:    sentiment/sentimentApp/migrations/__pycache__/0001_initial.cpython-39.pyc
+        deleted:    sentiment/sentimentApp/migrations/__pycache__/0002_auto_20210703_2323.cpython-39.pyc
+        deleted:    sentiment/sentimentApp/migrations/__pycache__/0003_auto_20210703_2327.cpython-39.pyc
+        deleted:    sentiment/sentimentApp/migrations/__pycache__/0004_alter_client_email.cpython-39.pyc
+        deleted:    sentiment/sentimentApp/migrations/__pycache__/__init__.cpython-39.pyc
+        deleted:    sentiment/sentimentApp/models.py
+        deleted:    sentiment/sentimentApp/tests.py
+        deleted:    sentiment/sentimentApp/urls.py
+        deleted:    sentiment/sentimentApp/views.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        rownok/
+
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>git add .
+warning: LF will be replaced by CRLF in rownok/.idea/inspectionProfiles/profiles_settings.xml.
+The file will have its original line endings in your working directory
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>git push -u origin main
+To https://github.com/Muhammad-Taufiq-Khan/SWE_Workspace.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Muhammad-Taufiq-Khan/SWE_Workspace.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>git push -f origin main
+Enumerating objects: 50, done.
+Counting objects: 100% (50/50), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (45/45), done.
+Writing objects: 100% (50/50), 22.22 KiB | 1.85 MiB/s, done.
+Total 50 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), done.
+To https://github.com/Muhammad-Taufiq-Khan/SWE_Workspace.git
+ + 5a08369...acd077c main -> main (forced update)
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>virtualenv env -p python3
+created virtual environment CPython3.9.4.final.0-64 in 10482ms
+  creator CPython3Windows(dest=C:\Users\Rownok Zahan Rupa\Desktop\Rownok\env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\Rownok Zahan Rupa\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==21.1.2, setuptools==57.0.0, wheel==0.36.2
+  activators BashActivator,BatchActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>source env/bin/active
+'source' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Rownok Zahan Rupa\Desktop\Rownok>
